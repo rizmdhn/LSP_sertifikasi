@@ -134,10 +134,6 @@ if (!$product) {
         const inputHarga = document.getElementById("harga");
         const inputDurasi = document.getElementById("durasi");
         const inputBreakfast = document.getElementById("include_breakfast");
-        if (inputTotal.value == "" || inputTotal.value == null || inputTotal.value == 0) {
-            inputTotal.value = 0;
-            inputTotal.classList.toggle("is-invalid", !isValid);
-        }
         btnTotal.addEventListener("click", function() {
             const harga = inputHarga.value;
             const durasi = inputDurasi.value;
